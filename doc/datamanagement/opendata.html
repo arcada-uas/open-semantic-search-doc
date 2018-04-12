@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- Sorry no IE7 support! -->
+<!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+<meta content="How to integrate Open Data to enhance semantic search, data analysis, text mining &amp; document analysis" about="/doc/datamanagement/opendata" property="dc:title" />
+<meta name="description" content="How data enrichment with Linked Open Data (LOD) from Open Access databases helps to improve search, find more results, to analyse document sets or data sets and generates leads for research" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="opendata.html" />
+<link rel="shortlink" href="http://opensemanticsearch.local/node/123" />
+<link rel="shortcut icon" href="../../sites/default/files/search_0.png" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="ImageToolbar" content="false" />
+  <title>How to integrate Open Data to enhance semantic search, data analysis, text mining &amp; document analysis | Open Semantic Search</title>
+  <style>@import url("http://opensemanticsearch.local/modules/system/system.base.css?p5ov0h");
+@import url("http://opensemanticsearch.local/modules/system/system.messages.css?p5ov0h");
+@import url("http://opensemanticsearch.local/modules/system/system.theme.css?p5ov0h");</style>
+<style>@import url("http://opensemanticsearch.local/modules/field/theme/field.css?p5ov0h");
+@import url("http://opensemanticsearch.local/modules/node/node.css?p5ov0h");
+@import url("http://opensemanticsearch.local/modules/search/search.css?p5ov0h");
+@import url("http://opensemanticsearch.local/modules/user/user.css?p5ov0h");
+@import url("../../sites/all/modules/views/css/views.css%3Fp5ov0h.css");</style>
+<style>@import url("../../sites/all/modules/ctools/css/ctools.css%3Fp5ov0h.css");</style>
+<style>@import url("http://opensemanticsearch.local/themes/custom/css/app.css?p5ov0h");
+@import url("http://opensemanticsearch.local/themes/custom/css/custom.css?p5ov0h");</style>
+  <script src="http://opensemanticsearch.local/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="http://opensemanticsearch.local/misc/jquery.once.js?v=1.2"></script>
+<script src="http://opensemanticsearch.local/misc/drupal.js?p5ov0h"></script>
+<script src="http://opensemanticsearch.local/themes/custom/js/vendor/custom.modernizr.js?p5ov0h"></script>
+<script src="http://opensemanticsearch.local/themes/custom/js/foundation.min.js?p5ov0h"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"custom","theme_token":"iPlawx_rMGQC4QNatNAXnC7VgG2-sXm4-NPPRzLtM60","js":{"modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"themes\/custom\/js\/vendor\/custom.modernizr.js":1,"themes\/custom\/js\/foundation.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"themes\/zurb-foundation\/css\/normalize.css":1,"themes\/custom\/css\/foundation.min.css":1,"themes\/custom\/css\/app.css":1,"themes\/custom\/css\/custom.css":1}}});</script>
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-123 node-type-page section-doc" >
+  <div class="skip-link">
+    <a href="opendata.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!--.page -->
+<div role="document" class="page">
+
+  <!--.l-header region -->
+  <header role="banner" class="l-header">
+
+          <!--.top-bar -->
+              <nav class="top-bar" data-topbar  data-options="custom_back_text:false">
+          <ul class="title-area">
+            <li class="name"><h1><a href="http://opensemanticsearch.local/" rel="home" title="Open Semantic Search Home">Open Semantic Search</a></h1></li>
+            <li class="toggle-topbar menu-icon"><a href="opendata.html#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+
+<ul class="right">
+<li class="has-form">
+<form action="http://opensemanticsearch.local/search/node/" method="post" id="search-form" accept-charset="UTF-8">
+ <div class="row collapse">
+  <div class="large-8 small-9 columns">
+   <input type="text" id="edit-keys" name="keys" value="" maxlength="255" class="form-text" placeholder="Find">
+  </div>
+  <div class="large-4 small-3 columns">
+<button value="Search" type="submit" class="button expand">Search</button>
+    </div>
+ </div> 
+</form>
+</li>
+</ul>
+
+                          <ul id="main-menu" class="main-nav left"><li class="first leaf" title=""><a href="http://opensemanticsearch.local/" title="">About</a></li><li class="leaf" title="Download Open Semantic Search for free"><a href="http://opensemanticsearch.local/download" title="Download Open Semantic Search for free">Download</a></li><li class="expanded has-dropdown" title="How to search, explore and filter the search results or document collections"><a href="../search.html" title="How to search, explore and filter the search results or document collections">Usage</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../search.html" title="How to search, explore and filter the search results or document collections">Usage</a><li class="first leaf" title="How to search and use interactive filters, semantic search, exploratory search, text analysis, document mining and data visualizations"><a href="../search.html" title="How to search and use interactive filters, semantic search, exploratory search, text analysis, document mining and data visualizations">Getting started</a></li><li class="leaf"><a href="../search/operators.html">Search operators</a></li><li class="leaf" title="How to filter by faceted search"><a href="http://www.opensemanticsearch.org/doc/search#faceted_search" title="How to filter by faceted search">Interactive filters (faceted search)</a></li><li class="leaf"><a href="../search/fuzzy.html">Fuzzy search</a></li><li class="expanded has-dropdown" title="How to tag and annotate documents and how to find more with collaborative tagging and collaborative annotations"><a href="annotation.html" title="How to tag and annotate documents and how to find more with collaborative tagging and collaborative annotations">Tagging and annotation</a><ul class="dropdown"><li class="expanded show-for-small"><a href="annotation.html" title="How to tag and annotate documents and how to find more with collaborative tagging and collaborative annotations">Tagging and annotation</a><li class="first last leaf"><a href="annotation/hypothesis.html">Visual annotation</a></li></ul></li><li class="expanded has-dropdown" title="Analysis of search results and documents with explorative search, text mining, faceted search, named entities extraction and data visualizations"><a href="../analytics.html" title="Analysis of search results and documents with explorative search, text mining, faceted search, named entities extraction and data visualizations">Analyze and explore (Analytics)</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../analytics.html" title="Analysis of search results and documents with explorative search, text mining, faceted search, named entities extraction and data visualizations">Analyze and explore (Analytics)</a><li class="first leaf" title=""><a href="http://www.opensemanticsearch.org/doc/search#faceted_search" title="">Aggregated overview of named entities like persons, organizations, locations or concepts (faceted search)</a></li><li class="leaf"><a href="../search/table.html">Table view</a></li><li class="leaf"><a href="../analytics/trend.html">Trend chart</a></li><li class="leaf"><a href="../analytics/words.html">Word cloud and word list</a></li><li class="leaf" title="How to explore and analyse a document collection with text mining (word frequencies text visualisation, topic modeling, clustering and text comparition)"><a href="../analytics/textmining.html" title="How to explore and analyse a document collection with text mining (word frequencies text visualisation, topic modeling, clustering and text comparition)">Text analytics: Text Mining and Content Analysis</a></li><li class="leaf" title="Graph view for network analysis to see relations and connections between the Named Entities and their networks"><a href="../analytics/graph.html" title="Graph view for network analysis to see relations and connections between the Named Entities and their networks">Network analysis, connections &amp; relations (graph)</a></li><li class="last leaf"><a href="../analytics/map.html">Map</a></li></ul></li><li class="expanded has-dropdown" title="Structure data, filters, navigation and aggregated overviews by ontologies like lists, vocabularies, taxonomies or thesaurus"><a href="../datamanagement.1.html" title="Structure data, filters, navigation and aggregated overviews by ontologies like lists, vocabularies, taxonomies or thesaurus">Manage structure (metadata management)</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../datamanagement.1.html" title="Structure data, filters, navigation and aggregated overviews by ontologies like lists, vocabularies, taxonomies or thesaurus">Manage structure (metadata management)</a><li class="first expanded has-dropdown" title="Managing names and concepts and structuring them by different relations like aliases, synonyms &amp; hyponyms"><a href="thesaurus.html" title="Managing names and concepts and structuring them by different relations like aliases, synonyms &amp; hyponyms">Vocabulary &amp; Thesaurus (dictionary of names or concepts, aliases, synonyms &amp; relations)</a><ul class="dropdown"><li class="first expanded show-for-small"><a href="thesaurus.html" title="Managing names and concepts and structuring them by different relations like aliases, synonyms &amp; hyponyms">Vocabulary &amp; Thesaurus (dictionary of names or concepts, aliases, synonyms &amp; relations)</a><li class="first last leaf"><a href="thesaurus/recommender.html">Recommender for thesaurus entries</a></li></ul></li><li class="leaf"><a href="ontologies.html">Lists, Dictionaries, Vocabularies and Thesauri (Ontologies)</a></li><li class="leaf"><a href="rules.html">Rules for automatic tagging or classification</a></li><li class="leaf" title="Tag with a search query to tag many documents at once"><a href="tagging_results_of_search_query.html" title="Tag with a search query to tag many documents at once">Tag all results of a search query</a></li><li class="leaf" title="Optical character recognition (OCR) in graphical formats like image files or images or scanned documents inside PDF files"><a href="ocr.html" title="Optical character recognition (OCR) in graphical formats like image files or images or scanned documents inside PDF files">Automatic text recognition (OCR)</a></li><li class="expanded has-dropdown" title="How to integrate Linked Open Data like Wikidata for better search, data analysis and text mining"><a href="opendata.html" title="How to integrate Linked Open Data like Wikidata for better search, data analysis and text mining" class="active">Open Data integration (LOD)</a><ul class="dropdown"><li class="expanded show-for-small"><a href="opendata.html" title="How to integrate Linked Open Data like Wikidata for better search, data analysis and text mining" class="active">Open Data integration (LOD)</a><li class="first last leaf" title="Import list of names from Wikidata, the structured database of Wikipedia"><a href="opendata/wikidata.html" title="Import list of names from Wikidata, the structured database of Wikipedia">Wikidata</a></li></ul></li><li class="last leaf" title="Named Entities Extraction by machine learning"><a href="named_entity_recognition.html" title="Named Entities Extraction by machine learning">Named entity recognition (NER)</a></li></ul></li><li class="leaf" title="Visualize data"><a href="../datavisualization.html" title="Visualize data">Data visualization</a></li><li class="leaf" title="Searching for each entry of a list if it occur in documents (Multisearch)"><a href="../search/list.html" title="Searching for each entry of a list if it occur in documents (Multisearch)">Search by list of names</a></li><li class="leaf"><a href="../desktop_search.html">Desktop Search</a></li><li class="leaf" title="Full text search &amp; faceted search on linked data in RDF knowledge graph"><a href="../search/graph.html" title="Full text search &amp; faceted search on linked data in RDF knowledge graph">Knowledge graph search</a></li><li class="last expanded has-dropdown" title="Manage imports or indexing of data or datasources"><a href="../admin/connectors.html" title="Manage imports or indexing of data or datasources">Import/index data or datasources</a><ul class="dropdown"><li class="last expanded show-for-small"><a href="../admin/connectors.html" title="Manage imports or indexing of data or datasources">Import/index data or datasources</a><li class="first leaf" title="Import data from CSV spreadsheets"><a href="../search/csv.html" title="Import data from CSV spreadsheets">Manage CSV spreadsheets</a></li><li class="last leaf"><a href="rss.html">RSS-Feed import</a></li></ul></li></ul></li><li class="expanded has-dropdown"><a href="../admin.1.html">Administration</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../admin.1.html">Administration</a><li class="first leaf"><a href="../tutorial.html">Getting started</a></li><li class="expanded has-dropdown"><a href="../admin/install.html">Installation</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../admin/install.html">Installation</a><li class="first leaf"><a href="../admin/install/desktop_search.html">Desktop search (single user)</a></li><li class="leaf"><a href="../admin/install/search_server.html">Search server (teams &amp; organizations)</a></li><li class="last leaf"><a href="../admin/install/search_appliance.html">Search appliance (search server VM)</a></li></ul></li><li class="expanded has-dropdown"><a href="../admin/config.html">Configuration</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../admin/config.html">Configuration</a><li class="first leaf" title="Blacklists and whitelists"><a href="../admin/config/blacklist.html" title="Blacklists and whitelists">Blacklisting</a></li><li class="leaf" title="Monitor filesystem"><a href="http://opensemanticsearch.local/trigger/filemonitoring" title="Monitor filesystem">Filemonitoring</a></li><li class="leaf" title="Enrich data with additional data analysis tools or external data sources"><a href="../data_enrichment.html" title="Enrich data with additional data analysis tools or external data sources">Data enrichment</a></li><li class="leaf"><a href="../admin/config/stemming.html">Grammar (Stemming)</a></li><li class="leaf" title="OCR for Solr or Elasticsearch"><a href="../admin/config/ocr.html" title="OCR for Solr or Elasticsearch">Automatic text recognition (OCR)</a></li><li class="leaf"><a href="../admin/config/log.html">Logfiles</a></li><li class="leaf" title="How to scale Open Semantic Search"><a href="../admin/optimize.html" title="How to scale Open Semantic Search">Optimizing performance &amp; scaling (parallel processing &amp; server cluster)</a></li><li class="leaf"><a href="../admin/config/password.html">Password protection</a></li><li class="leaf"><a href="../admin/config/queue.html">Queue</a></li><li class="leaf"><a href="../admin/config/scheduler.html">Scheduling</a></li><li class="last leaf"><a href="../admin/config/synonyms.html">Synonyms and aliases</a></li></ul></li><li class="expanded has-dropdown" title="Crawl and import data to the search index"><a href="../admin/connectors.html" title="Crawl and import data to the search index">Connectors (Importer)</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../admin/connectors.html" title="Crawl and import data to the search index">Connectors (Importer)</a><li class="first expanded has-dropdown"><a href="http://opensemanticsearch.local/connector/files">Files &amp; directories (Filesystem)</a><ul class="dropdown"><li class="first expanded show-for-small"><a href="http://opensemanticsearch.local/connector/files">Files &amp; directories (Filesystem)</a><li class="first last leaf" title="Index documents from Portable Document Format"><a href="http://opensemanticsearch.local/connector/files/pdf" title="Index documents from Portable Document Format">Portable document format (PDF)</a></li></ul></li><li class="leaf"><a href="http://opensemanticsearch.local/connector/rss">RSS-Feed (RSS)</a></li><li class="leaf" title="Full text search, semantic search and text mining in tables of a SQL database"><a href="http://opensemanticsearch.local/connector/db" title="Full text search, semantic search and text mining in tables of a SQL database">Database (SQL)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/connector/email">E-Mail (IMAP)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/connector/web">Website (HTTP)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/connector/wiki">Wiki (Mediawiki)</a></li><li class="leaf" title="Resource Description Format"><a href="http://opensemanticsearch.local/connector/rdf" title="Resource Description Format">Linked Data Graph (RDF)</a></li><li class="leaf" title="Web scraping: Extract structured data from websites where no CSV, RSS, XML, RDF or other semantic Web standards available"><a href="http://opensemanticsearch.local/connector/scraper" title="Web scraping: Extract structured data from websites where no CSV, RSS, XML, RDF or other semantic Web standards available">Web scraper (ETL of structured data from HTML)</a></li><li class="last leaf"><a href="http://opensemanticsearch.local/connector/hypothesis">Hypothesis annotations</a></li></ul></li><li class="expanded has-dropdown" title="Enhance or enrich data with semantic data enrichment plugins managed by a flexible document processing, content analysis and data enrichment pipeline"><a href="../data_enrichment.html" title="Enhance or enrich data with semantic data enrichment plugins managed by a flexible document processing, content analysis and data enrichment pipeline">Analysis &amp; data enrichment</a><ul class="dropdown"><li class="expanded show-for-small"><a href="../data_enrichment.html" title="Enhance or enrich data with semantic data enrichment plugins managed by a flexible document processing, content analysis and data enrichment pipeline">Analysis &amp; data enrichment</a><li class="first leaf"><a href="http://opensemanticsearch.local/enhancer/ocr">Automatic textrecognition (OCR)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/rdf">Resource Description Framework (RDF)</a></li><li class="leaf" title="Extract structured data from unstructured text with regular expressions"><a href="http://opensemanticsearch.local/enhancer/regex" title="Extract structured data from unstructured text with regular expressions">Extract data by text patterns (regular expressions)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/named_entitiy_recognition/stanford_named_entity_recognizer">Named Entity Recognition (NER)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/zip">Archive files (ZIP)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/xmp-sidecar-files">XMP sidecar files (XMP)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/rdf-drupal">Enhancer RDF Drupal</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/geonames">Locations (GeoNames)</a></li><li class="leaf" title="Tagging documents by concepts and labels in ontologies and thesauri"><a href="http://opensemanticsearch.local/solr-ontology-tagger" title="Tagging documents by concepts and labels in ontologies and thesauri">Ontology tagger (RDF &amp; SKOS)</a></li><li class="leaf"><a href="http://opensemanticsearch.local/enhancer/csv">Spreadsheets (CSV)</a></li><li class="leaf" title="Extract text from speech in audio files like WAV or MP3"><a href="http://opensemanticsearch.local/enhancer/speech" title="Extract text from speech in audio files like WAV or MP3">Speech recogintion (Audio)</a></li><li class="leaf"><a href="../analytics/email.html">Outlook e-mails and file attachments</a></li><li class="last expanded has-dropdown"><a href="http://opensemanticsearch.local/dev/enhancer">Developing own data enrichment plugins</a><ul class="dropdown"><li class="last expanded show-for-small"><a href="http://opensemanticsearch.local/dev/enhancer">Developing own data enrichment plugins</a><li class="first last leaf"><a href="http://opensemanticsearch.local/dev/enhancer/python">How to develop your own data enrichment plugins with python</a></li></ul></li></ul></li><li class="expanded has-dropdown" title=""><a href="http://www.opensemanticsearch.org/doc/modules#trigger" title="">Trigger</a><ul class="dropdown"><li class="expanded show-for-small"><a href="http://www.opensemanticsearch.org/doc/modules#trigger" title="">Trigger</a><li class="first last leaf"><a href="http://opensemanticsearch.local/trigger/filemonitoring">Filesystem monitoring</a></li></ul></li><li class="leaf" title="Command line interface"><a href="../admin/cmd.html" title="Command line interface">Command line tools (CLI)</a></li><li class="leaf" title=""><a href="../admin/rest-api.html" title="">Webservices (REST-API)</a></li><li class="last leaf"><a href="../admin/client.html">Client integration</a></li></ul></li><li class="expanded has-dropdown"><a href="http://opensemanticsearch.local/dev">Development</a><ul class="dropdown"><li class="expanded show-for-small"><a href="http://opensemanticsearch.local/dev">Development</a><li class="first leaf" title=""><a href="http://opensemanticsearch.local/dev" title="">Source code and open source development</a></li><li class="leaf" title="Tools, modules, plugins and software architecture"><a href="../modules.html" title="Tools, modules, plugins and software architecture">Search engine architecture</a></li><li class="last leaf" title=""><a href="http://opensemanticsearch.local/dev/enhancer" title="">Development of data enrichment plugins</a></li></ul></li><li class="leaf"><a href="http://opensemanticsearch.local/donate">Donate</a></li><li class="last leaf"><a href="http://opensemanticsearch.local/contact">Contact</a></li></ul>            
+                      </section>
+        </nav>
+            <!--/.top-bar -->
+    
+    <!-- Title, slogan and menu -->
+        <!-- End title, slogan and menu -->
+
+
+<section class="breadcrumb">
+<div class="row">
+<div class="small-12 columns">
+<h2 class="element-invisible">You are here</h2><ul class="breadcrumbs"><li><a href="http://opensemanticsearch.local/">Home</a></li><li><a href="../search.html" title="How to search, explore and filter the search results or document collections">Usage</a></li><li><a href="../datamanagement.1.html" title="Structure data, filters, navigation and aggregated overviews by ontologies like lists, vocabularies, taxonomies or thesaurus">Manage structure (metadata management)</a></li><li class="current"><a href="opendata.html#">How to integrate Open Data to enhance semantic search, data analysis, text mining &amp; document analysis</a></li></ul></div>
+</div>
+</section>
+    
+  </header>
+  <!--/.l-header -->
+
+  
+  
+  
+  <main role="main" class="row l-main">
+    <div class="large-9 large-push-3 main columns">
+      
+      <a id="main-content"></a>
+
+                      <h1 id="page-title" class="title">How to integrate Open Data to enhance semantic search, data analysis, text mining &amp; document analysis</h1>
+              
+                            
+      
+        
+      
+      <article id="node-123" class="node node-page view-mode-full" about="/doc/datamanagement/opendata" typeof="foaf:Document">
+
+      
+  
+  <div class="body field"><h2>How data enrichment with Linked Open Data (LOD) from Open Access databases helps to improve search, find more results, analyse document sets and data sets and how monitoring with Open Data watchlists generates leads for investigative research</h2>
+<p><a href="opendata.html#opendata">Open Data</a> from Open Access databases like <a href="opendata.html#wikidata">WikiData (structured data from Wikipedia)</a> can be used to improve analysis and navigation of your private data.</p>
+<p>It can generate <a href="opendata.html#leads">leads for important documents where important concepts or people occur</a>.</p>
+<p>Or your private data or documents can be enriched with additional data or structures from open data.</p>
+<p>So the integration of Open Data with Open Source research tools enables easier search, more and better search results, analytics and interactive filters (faceted search), watchlists and other useful and powerful features by a combination of textmining and data analysis methods like <a href="opendata.html#named_entities">entity matching and entity tagging</a>, analytics or <a href="opendata.html#machinelearning">automatic classification by machine learning</a>.</p>
+<p>Computing all this with open source software on your own computer or server all that is possible <a href="opendata.html#privacy">without giving away sensitive informations because of privacy issues with any cloud services</a>.</p>
+<p><a name="opendata" id="opendata"></a></p>
+<h2>Sharing data and Open Data</h2>
+<p>If there is an existing list, dictionary, vocabulary or thesaurus or if the entries are available in other structured format like an semantic web ontology yet i.e. from other tools or some <a href="opendata.html#wikidata">open data sources</a>, you don't need to enter manually each named entity like persons, organizations, locations or important words or concepts to the <a href="thesaurus.html">thesaurus</a> to use them for <a href="../search.html#faceted_search">analytics, navigation, aggregated overview and interactive filters</a>.</p>
+<p>You can <a href="ontologies.html">import existing, shared or external list of names, thesauri, dictionaries, vocabularies or ontologies</a>:</p>
+<div class="panel float-right">
+<img src="../../screenshots/import_ontology.png" /></div>
+<p><a name="named_entities" id="named_entities"></a></p>
+<h2>Tagging named entities like people or organizations</h2>
+<div class="panel right"><a href="../../screenshots/faceted_search.png"><img src="../../screenshots/facets.png" style="width: 140px;" class="right" /></a></div>
+<p>Using this list of important names or ontology the <a href="thesaurus.html">named entities tagger</a> can tag documents in which this names occur.</p>
+<p><a name="leads" id="leads"></a></p>
+<h2>Leads for research by matching watchlists</h2>
+<p>So you get leads for potential relevant documents where important concepts or people on such a watchlist or ontology occur, i.e. if analysing a large unknown document set or dataset or after getting new documents or news.</p>
+<h2 title="Faceted search">Analytics, aggregated overviews and exploration</h2>
+<p>By the faceted search you get an aggregated overview for the different facets like concepts, persons, locations or organizations showing, how many documents matching this entity.</p>
+<h2>Interactive filters (faceted search)</h2>
+<p>You can use this overviews or named entities as interactive filter to narrow down search results.<br />
+So a click to a facet (i.e. an organization) will drill down the search results to fewer documents, matching this additional facet/filter, too.</p>
+<p><a name="wikidata" id="wikidata"></a></p>
+<h2>Free open data source (Linked Open Data from WikiData)</h2>
+<p>One of the biggest and an universal <a target="_blank" href="https://en.wikipedia.org/wiki/Open_data">Open Data</a> source is <a target="_blank" href="https://www.wikidata.org">WikiData</a>, the structured multilingual database from Wikipedia.</p>
+<p>From this structured datasource you can <a href="opendata/wikidata.html">select and download lists of names for example of important people like politicians</a> for analysis of your document sets, navigation and interactive filters, enable semantic search to find aliases or names in other languages, watchlists, data for data enrichment or data for machine learning.</p>
+<h2>Finds more by thesauri of synonyms and irregular verbs (Wiktionary)</h2>
+<p>Another usage of Open Data is to use a dictionary and thesaurus like the Wikipedia Wiktionary or an Libre Office or Open Office hunspell dictionary to extend search queries or indexes so you are able to find synonyms and irregular verbs, too.</p>
+<p><a name="machinelearning" id="machinelearning"></a></p>
+<h2>Automatic classification or disambiguation (machine learning)</h2>
+<p>Another use of open data from WikiData or Wikipedia is to get good training data for classification and disambiguation.</p>
+<p>So we get for example the possibility to guess which meaning names or words with more than one meaning (homonyms) by comparing the context with big open data like Wikipedia by machine learning algorithms for automatic classification to disambiguate the named entity.</p>
+<p><a name="privacy" id="privacy"></a></p>
+<h2>Privacy and data protection: Investigative Research with Open Source Software</h2>
+<p>With our free Open Source software and research tools you can use Open Data from open data sources on the internet even for investigative research in sensitive documents or other sensitive data with enhanced privacy needs like for example needed for investigative journalism:</p>
+<p>Since there is no cloud but only other peoples or companies computers, we want to compute our data ourselves with Free Software.</p>
+<p>So after download and import of an open dataset our open source search engine computes all matching and watching for this Open Data list or ontology only on your own laptop or server. There is no upload of documents content fotr analysis nor upload of matching names to a cloud service.</p>
+<h2>Big Data analysis by Open Data</h2>
+<p>This is even possible for many named entities or list entries and very much data or and huge document collections.</p>
+<p>In some research, text mining and data analysis projects we cross referenced documents with lists and ontologies with hundreds of thousands of names like politicians, species, materials or other important concepts to look for.</p>
+<p>In such cases you should import the list to thesaurus editor or ontologies manager for entity tagging before indexing the documents so most entities can be extracted more performant while and before indexing instead of later searches and document updates for each entity, which will need some time in such cases.</p>
+</div>
+        
+    
+</article>
+  
+    </div>
+    <!--/.main region -->
+
+          <aside role="complementary" class="large-3 large-pull-9 sidebar-first columns sidebar">
+            <section class="block block-menu block-menu-menu-kommunizieren clearfix">
+
+        <h2 class="block-title">Search</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="../search/operators.html" title="">Search operators</a></li>
+<li class="leaf"><a href="../search/fuzzy.html" title="">Fuzzy search</a></li>
+<li class="leaf"><a href="../search.html" title="How to explore and filter search results or document sets">Explore and filter search results or document collections</a></li>
+<li class="leaf"><a href="../search/table.html" title="">Table view</a></li>
+<li class="last leaf"><a href="../search/list.html" title="App for fuzzy searching by lists">Search by a list</a></li>
+</ul>  
+</section>  <section class="block block-menu block-menu-menu-analyze clearfix">
+
+        <h2 class="block-title">Analyze &amp; explore</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="http://www.opensemanticsearch.org/doc/search#faceted_search" title="Exploratory search and faceted search">Aggregated overview and interactive filters (faceted search)</a></li>
+<li class="leaf"><a href="http://www.opensemanticsearch.org/doc/search#named_entities" title="">Named entities (i.e. persons, organizations, locations or concepts)</a></li>
+<li class="leaf"><a href="../analytics/trend.html" title="">Trend chart</a></li>
+<li class="leaf"><a href="../analytics/words.html" title="">Word cloud and list of words</a></li>
+<li class="leaf"><a href="../analytics/textmining.html" title="Text analysis and textmining">Text analysis, text mining and document mining</a></li>
+<li class="leaf"><a href="../analytics/graph.html" title="Shows and let you browse and explore connections, relations and networks">Network analysis, relations and connections (graph visualization)</a></li>
+<li class="leaf"><a href="../analytics/map.html" title="Mapping of documents with location and places on an interactive map">Locations &amp; places (map)</a></li>
+<li class="last leaf"><a href="ocr.html" title="">Optical character recognition of scanned documents or text in images (OCR)</a></li>
+</ul>  
+</section>  <section class="block block-menu block-menu-menu-annotation clearfix">
+
+        <h2 class="block-title">Tag &amp; annotate</h2>
+    
+      <ul class="menu"><li class="first last leaf"><a href="annotation.html" title="">Tagging &amp; annotation</a></li>
+</ul>  
+</section>  <section class="block block-menu block-menu-menu-structure clearfix">
+
+        <h2 class="block-title">Structure</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="thesaurus.html" title="Thesaurus for management of namend entities like persons, organizations, locations or concepts, words and terms and their relations like aliases or synonyms)">Vocabulary &amp; Thesaurus  (names, words, topics, concepts &amp; relations like aliases, synonyms or related terms)</a></li>
+<li class="leaf"><a href="ontologies.html" title="">Lists of names, Dictionaries, Vocabularies and Thesauri (Ontologies)</a></li>
+<li class="leaf"><a href="rules.html" title="">Rules and pipes (search query based automatic tagging and filtering)</a></li>
+<li class="leaf"><a href="tagging_results_of_search_query.html" title="">Tag all results of a search query</a></li>
+<li class="leaf active-trail"><a href="opendata.html" title="Enrich your private data with Open Data like Wikidata to find more search results and for better data analysis by Open Data." class="active-trail active">Open Data integration (Wikidata or Wiktionary)</a></li>
+<li class="last leaf"><a href="named_entity_recognition.html" title="">Automatic extraction of persons, organizations and places (Named Entity Recognition by machine learning)</a></li>
+</ul>  
+</section>      </aside>
+    
+      </main>
+  <!--/.main-->
+
+  
+
+
+<div class="footer">
+  <!--.l-footer-->
+  <footer class="l-footer panel row" role="contentinfo">
+    
+
+      <!--.footer-columns -->
+    <section class="row l-footer-columns">
+              <div class="footer-first medium-3 columns">
+              <section class="block block-menu block-menu-menu-languages">
+
+        <h2 class="block-title">Language</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="http://www.opensemanticsearch.org/" title="">English</a></li>
+<li class="last leaf"><a href="http://www.opensemanticsearch.org/de/" title="">Deutsch</a></li>
+</ul>  
+</section>        </div>
+                    <div class="footer-second medium-3 columns">
+              <section class="block block-menu block-menu-menu-subscribe">
+
+        <h2 class="block-title">Subscribe</h2>
+    
+      <ul class="menu"><li class="first last leaf"><a href="http://opensemanticsearch.local/feed" title="">RSS-Feed</a></li>
+</ul>  
+</section>        </div>
+                    <div class="footer-third medium-3 columns">
+              <section class="block block-menu block-menu-menu-social-media">
+
+        <h2 class="block-title">Social Media</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="https://github.com/opensemanticsearch" title="Open Semantic Search Git repository for the source code">GitHub</a></li>
+<li class="leaf"><a href="https://www.facebook.com/opensemanticsearch" title="Open Semantic Search on Facebook">Facebook</a></li>
+<li class="last leaf"><a href="http://twitter.com/OpenSemSearch" title="Open Semantic Search on Twitter">Twitter</a></li>
+</ul>  
+</section>        </div>
+                    <div class="footer-fourth medium-3 columns">
+              <section class="block block-menu block-menu-menu-meta">
+
+        <h2 class="block-title">Contact</h2>
+    
+      <ul class="menu"><li class="first leaf"><a href="http://opensemanticsearch.local/contact" title="">Contact</a></li>
+<li class="last leaf"><a href="http://opensemanticsearch.local/imprint" title="">Imprint</a></li>
+</ul>  
+</section>        </div>
+          </section>
+    <!--/.footer-columns-->
+  
+
+
+  </footer>
+</div>
+  <!--/.footer-->
+  </div>
+<!--/.page -->
+
+
+      <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script>
+</body>
+</html>
